@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishabh Singh | B.Tech Innovator & National Athlete</title>
+  <meta name="description" content="Official Portfolio of Rishabh Singh - B.Tech First-Year Student at JECRC University, National-Level Athlete, Tech Enthusiast from Varanasi." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Interactive AI & Digital Literacy Canvas Background -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Ambient Floating Tech Elements (AI, Digital Literacy, JECRC) -->
+  <div class="ambient-elements" aria-hidden="true">
+    <div class="floating-badge badge-1">
+      <span class="badge-icon"><i class="fa-solid fa-brain"></i></span>
+      <span class="badge-text">Artificial Intelligence</span>
+    </div>
+    <div class="floating-badge badge-2">
+      <span class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+      <span class="badge-text">JECRC University • B.Tech</span>
+    </div>
+    <div class="floating-badge badge-3">
+      <span class="badge-icon"><i class="fa-solid fa-network-wired"></i></span>
+      <span class="badge-text">Digital Literacy & Innovation</span>
+    </div>
+    <div class="floating-badge badge-4">
+      <span class="badge-icon"><i class="fa-solid fa-medal"></i></span>
+      <span class="badge-text">National Level Athlete</span>
+    </div>
+    <div class="code-matrix-stream" id="matrix-stream"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Rishabh Singh Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Rishabh</span>
+        <span class="logo-dot">.</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Audio effects toggle -->
+        <button id="audio-toggle-btn" class="audio-btn" title="Toggle Futuristic Sound Effects" aria-label="Toggle Sound">
+          <i class="fa-solid fa-volume-xmark" id="audio-icon"></i>
+        </button>
+        <!-- Contact quick button -->
+        <button class="nav-cta-btn trigger-action" data-action="contact">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Get in Touch</span>
+        </button>
+        <!-- Mobile hamburger toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HOME / HERO SECTION ==================== -->
+    <section class="section hero-section" id="home">
+      <div class="hero-container">
+        
+        <!-- Hero Text & CTAs -->
+        <div class="hero-content">
+          <div class="hero-tag-pill">
+            <span class="pulsing-status"></span>
+            <span>B.Tech First-Year Student • Tech & Sports</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Rishabh Singh</span>
+          </h1>
+
+          <div class="hero-subheadline">
+            <span class="typing-prefix">Passionate about</span>
+            <span class="dynamic-typewriter" id="typewriter"></span>
+          </div>
+
+          <p class="hero-description">
+            From the historic spiritual hub of <strong>Varanasi</strong> to the innovative halls of 
+            <strong>JECRC University</strong>. A very curious and energetic first-year engineer bringing 
+            the discipline of national-level sports into the universe of AI, digital literacy, and modern technology.
+          </p>
+
+          <!-- Location & College Pills -->
+          <div class="hero-badges">
+            <div class="hero-badge">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Varanasi, UP</span>
+            </div>
+            <div class="hero-badge">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>JECRC University, Jaipur</span>
+            </div>
+            <div class="hero-badge">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Curious & Energetic</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons with Aesthetic Loading Effects -->
+          <div class="hero-buttons">
+            <!-- 1. Download Resume -->
+            <button class="glow-btn primary-glow trigger-action" data-action="resume" id="btn-resume">
+              <span class="btn-beam"></span>
+              <span class="btn-content">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span class="btn-text">Download Resume</span>
+              </span>
+            </button>
+
+            <!-- 2. Certificates Button -->
+            <button class="glow-btn secondary-glow trigger-action" data-action="certificates" id="btn-certificates">
+              <span class="btn-beam"></span>
+              <span class="btn-content">
+                <i class="fa-solid fa-award"></i>
+                <span class="btn-text">Certificates</span>
+              </span>
+            </button>
+
+            <!-- 3. Contact Button -->
+            <button class="glow-btn outline-glow trigger-action" data-action="contact" id="btn-contact">
+              <span class="btn-beam"></span>
+              <span class="btn-content">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <span class="btn-text">Contact Me</span>
+              </span>
+            </button>
+          </div>
+
+          <!-- Quick Social Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="mailto:singhrishabh0089@gmail.com" class="social-icon" title="Email Rishabh" target="_blank" rel="noopener">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com/" class="social-icon" title="LinkedIn Profile" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/" class="social-icon" title="GitHub Profile" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://instagram.com/" class="social-icon" title="Instagram Profile" target="_blank" rel="noopener">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Photo Card -->
+        <div class="hero-visual">
+          <div class="photo-card-wrapper" id="photo-card">
+            <!-- Glowing Orbit Rings -->
+            <div class="orbit-ring ring-1"></div>
+            <div class="orbit-ring ring-2"></div>
+
+            <!-- Profile Photo Card -->
+            <div class="photo-card">
+              <div class="photo-frame">
+                <img 
+                  src="images/rishabh-photo.jpg" 
+                  alt="Rishabh Singh - B.Tech Student at JECRC University" 
+                  class="profile-image"
+                  id="profile-img"
+                  loading="eager"
+                />
+                <div class="photo-overlay"></div>
+              </div>
+
+              <!-- Floating Card Badges -->
+              <div class="photo-badge top-right">
+                <i class="fa-solid fa-trophy gold-icon"></i>
+                <span>National Kabaddi</span>
+              </div>
+
+              <div class="photo-badge bottom-left">
+                <i class="fa-solid fa-microchip cyan-icon"></i>
+                <span>B.Tech / AI</span>
+              </div>
+
+              <div class="photo-status-indicator">
+                <span class="status-dot"></span>
+                <span>Ready to collaborate & innovate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-down" aria-label="Scroll to About Section">
+        <span class="scroll-text">Explore Rishabh's Journey</span>
+        <div class="mouse-icon">
+          <div class="mouse-wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> Discover</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Get to know Rishabh Singh — where Varanasi's timeless heritage meets cutting-edge engineering passion.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Narrative Card -->
+          <div class="glass-card about-narrative">
+            <div class="card-glow-header">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-title">rishabh_singh_profile.env</span>
+            </div>
+            
+            <div class="narrative-body">
+              <h3 class="about-lead">
+                I am <span class="highlight-cyan">Rishabh Singh</span>, an ambitious first-year 
+                <span class="highlight-purple">B.Tech student</span> at 
+                <strong class="highlight-gold">JECRC University</strong>.
+              </h3>
+
+              <p>
+                Hailing from the spiritual, vibrant, and timeless city of <strong>Varanasi</strong>, 
+                I bring an inherent sense of discipline, grounding, and curiosity to everything I undertake. 
+                My mindset has been forged equally by rigorous academics and high-stakes competitive sports.
+              </p>
+
+              <div class="personality-highlight">
+                <div class="personality-icon">
+                  <i class="fa-solid fa-fire-flame-curved"></i>
+                </div>
+                <div class="personality-content">
+                  <h4>Curious & Energetic by Nature</h4>
+                  <p>
+                    I am driven by an insatiable curiosity to discover how systems work, embrace new tech paradigms, 
+                    and channel high energy into team leadership, creative problem solving, and technological innovation.
+                  </p>
+                </div>
+              </div>
+
+              <p class="about-tech-focus">
+                Currently exploring <strong>Artificial Intelligence</strong>, <strong>Digital Literacy</strong>, 
+                and core engineering principles at <strong>JECRC University</strong>, I aim to combine technical expertise 
+                with exceptional interpersonal and communicative prowess.
+              </p>
+
+              <div class="about-actions">
+                <button class="btn-modern trigger-action" data-action="certificates">
+                  <i class="fa-solid fa-medal"></i>
+                  <span>View Sports & Honors</span>
+                </button>
+                <button class="btn-modern outline trigger-action" data-action="contact">
+                  <i class="fa-solid fa-handshake"></i>
+                  <span>Let's Connect</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Metrics & Highlights -->
+          <div class="about-metrics">
+            <div class="glass-card metric-card">
+              <div class="metric-icon gold">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div class="metric-details">
+                <span class="metric-label">Hometown</span>
+                <span class="metric-value">Varanasi, UP</span>
+                <span class="metric-sub">Cultural & Spiritual Capital</span>
+              </div>
+            </div>
+
+            <div class="glass-card metric-card">
+              <div class="metric-icon purple">
+                <i class="fa-solid fa-university"></i>
+              </div>
+              <div class="metric-details">
+                <span class="metric-label">Current University</span>
+                <span class="metric-value">JECRC University</span>
+                <span class="metric-sub">B.Tech First Year</span>
+              </div>
+            </div>
+
+            <div class="glass-card metric-card">
+              <div class="metric-icon cyan">
+                <i class="fa-solid fa-medal"></i>
+              </div>
+              <div class="metric-details">
+                <span class="metric-label">Athletic Standard</span>
+                <span class="metric-value">National Player</span>
+                <span class="metric-sub">Kabaddi, Volleyball, Athletics</span>
+              </div>
+            </div>
+
+            <div class="glass-card metric-card">
+              <div class="metric-icon orange">
+                <i class="fa-solid fa-atom"></i>
+              </div>
+              <div class="metric-details">
+                <span class="metric-label">Personality Trait</span>
+                <span class="metric-value">Curious & Energetic</span>
+                <span class="metric-sub">Quick Learner & Team Catalyst</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Pathway</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">From foundational discipline at Kendriya Vidyalaya to university engineering at JECRC.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Step 2 (Present): JECRC University -->
+          <div class="timeline-card-wrapper active-step">
+            <div class="timeline-node">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-tag current">Current Education • 2024 - Present</span>
+                  <h3 class="timeline-institution">JECRC University</h3>
+                  <h4 class="timeline-degree">Bachelor of Technology (B.Tech) — First Year</h4>
+                </div>
+                <div class="institution-badge jecrc-badge">
+                  <i class="fa-solid fa-robot"></i>
+                  <span>JECRC</span>
+                </div>
+              </div>
+
+              <p class="timeline-description">
+                Pursuing my undergraduate engineering degree at JECRC University, Jaipur. Focusing on core computing concepts, 
+                digital literacy, programming logic, engineering mathematics, and emerging technologies like Artificial Intelligence. 
+                Actively participating in university tech forums, student collaborative projects, and campus sports initiatives.
+              </p>
+
+              <div class="timeline-skills-chips">
+                <span class="chip"><i class="fa-solid fa-check"></i> First-Year B.Tech</span>
+                <span class="chip"><i class="fa-solid fa-check"></i> Emerging Tech & AI Focus</span>
+                <span class="chip"><i class="fa-solid fa-check"></i> Digital Literacy</span>
+                <span class="chip"><i class="fa-solid fa-check"></i> Engineering Mindset</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 1: Kendriya Vidyalaya (Class 1 to Class 12) -->
+          <div class="timeline-card-wrapper">
+            <div class="timeline-node">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-tag">Foundational 12 Years • Completed</span>
+                  <h3 class="timeline-institution">Kendriya Vidyalaya (KV)</h3>
+                  <h4 class="timeline-degree">Primary, Secondary & Senior Secondary (Class 1 to Class 12)</h4>
+                </div>
+                <div class="institution-badge kv-badge">
+                  <i class="fa-solid fa-star"></i>
+                  <span>12 Years at KV</span>
+                </div>
+              </div>
+
+              <p class="timeline-description">
+                Completed my entire 12-year schooling journey at Kendriya Vidyalaya from Class 1 through Class 12. 
+                Kendriya Vidyalaya nurtured strong academic discipline, leadership qualities, teamwork, and provided the 
+                vital platform to participate and excel in national and regional level sports tournaments.
+              </p>
+
+              <div class="timeline-skills-chips">
+                <span class="chip"><i class="fa-solid fa-shield-halved"></i> Class 1 to Class 12 Complete</span>
+                <span class="chip"><i class="fa-solid fa-trophy"></i> National Sports Representation</span>
+                <span class="chip"><i class="fa-solid fa-book"></i> Holistic All-Round Development</span>
+                <span class="chip"><i class="fa-solid fa-users"></i> Student Leadership</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-lightbulb"></i> Capabilities & Strengths</span>
+          <h2 class="section-title">Core <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">Interpersonal excellence, dynamic leadership, and communicative mastery essential for modern tech leadership.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Skill 1: Communication Skills -->
+          <div class="glass-card skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon cyan">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+              <span class="skill-level">Mastery</span>
+            </div>
+            <h3 class="skill-name">Communication Skills</h3>
+            <p class="skill-desc">
+              Articulating concepts with clarity, precision, and empathy across diverse audiences, whether technical peers or general stakeholders.
+            </p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="--percent: 95%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Active Listening</span>
+              <span>Clarity</span>
+              <span>Empathy</span>
+            </div>
+          </div>
+
+          <!-- Skill 2: English Speaking and Writing -->
+          <div class="glass-card skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon purple">
+                <i class="fa-solid fa-pen-fancy"></i>
+              </div>
+              <span class="skill-level">Fluent</span>
+            </div>
+            <h3 class="skill-name">English Speaking & Writing</h3>
+            <p class="skill-desc">
+              High fluency in spoken and written English for professional documentation, public discussions, reports, and international collaboration.
+            </p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="--percent: 92%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Professional Vocabulary</span>
+              <span>Technical Writing</span>
+              <span>Fluent Oratory</span>
+            </div>
+          </div>
+
+          <!-- Skill 3: Presentation Skills -->
+          <div class="glass-card skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon gold">
+                <i class="fa-solid fa-person-chalkboard"></i>
+              </div>
+              <span class="skill-level">Impactful</span>
+            </div>
+            <h3 class="skill-name">Presentation Skills</h3>
+            <p class="skill-desc">
+              Delivering high-energy, visually engaging, and structured presentations that captivate audiences and communicate ideas effectively.
+            </p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="--percent: 90%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Visual Storytelling</span>
+              <span>Stage Presence</span>
+              <span>Slide Deck Design</span>
+            </div>
+          </div>
+
+          <!-- Skill 4: Teamwork -->
+          <div class="glass-card skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon blue">
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <span class="skill-level">Exemplary</span>
+            </div>
+            <h3 class="skill-name">Teamwork</h3>
+            <p class="skill-desc">
+              Proven ability to coordinate seamlessly with group members, foster inclusive atmospheres, and leverage sports-tested camaraderie to achieve common goals.
+            </p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="--percent: 96%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Cross-Functional</span>
+              <span>Camaraderie</span>
+              <span>Conflict Resolution</span>
+            </div>
+          </div>
+
+          <!-- Skill 5: Time Management -->
+          <div class="glass-card skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon green">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+              <span class="skill-level">Disciplined</span>
+            </div>
+            <h3 class="skill-name">Time Management</h3>
+            <p class="skill-desc">
+              Balancing rigorous B.Tech coursework, national athletic training regimens, and self-directed tech learning through structured scheduling and focus.
+            </p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="--percent: 92%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Prioritization</span>
+              <span>Goal Tracking</span>
+              <span>Sprint Discipline</span>
+            </div>
+          </div>
+
+          <!-- Skill 6: Leadership -->
+          <div class="glass-card skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon orange">
+                <i class="fa-solid fa-chess-king"></i>
+              </div>
+              <span class="skill-level">Decisive</span>
+            </div>
+            <h3 class="skill-name">Leadership</h3>
+            <p class="skill-desc">
+              Leading teams from the front with enthusiasm, strategic vision, accountability, and the energetic spirit needed to inspire peers under pressure.
+            </p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="--percent: 93%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Team Captaincy</span>
+              <span>Motivation</span>
+              <span>Accountability</span>
+            </div>
+          </div>
+
+          <!-- Skill 7: Critical Thinking -->
+          <div class="glass-card skill-card featured-span">
+            <div class="skill-card-top">
+              <div class="skill-icon red">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <span class="skill-level">Analytical</span>
+            </div>
+            <h3 class="skill-name">Critical Thinking</h3>
+            <p class="skill-desc">
+              Breaking down intricate engineering challenges into fundamental principles, evaluating hypotheses objectively, and making data-informed, tactical decisions.
+            </p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="--percent: 94%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Logical Analysis</span>
+              <span>Problem Decomposition</span>
+              <span>Tactical Strategy</span>
+              <span>Root Cause Analysis</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS SECTION ==================== -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-trophy"></i> Sporting Honors & Accolades</span>
+          <h2 class="section-title">Sports <span class="gradient-text">Achievements</span></h2>
+          <p class="section-subtitle">
+            A proud sportsperson with proven national & regional accolades. The resilience learned on the sports field fuels my drive in engineering.
+          </p>
+        </div>
+
+        <!-- Sportsperson Banner Highlight -->
+        <div class="glass-card athlete-banner">
+          <div class="banner-icon-side">
+            <div class="trophy-pulse">
+              <i class="fa-solid fa-award"></i>
+            </div>
+          </div>
+          <div class="banner-text-side">
+            <span class="banner-tag">Athlete Identity</span>
+            <h3>Passionate Multi-Sport Athlete</h3>
+            <p>
+              Sports has played a transformative role throughout my schooling at Kendriya Vidyalaya. 
+              I have represented my school and region in multiple competitive disciplines, earning numerous 
+              <strong>certificates, trophies, and medals</strong> that testify to mental toughness, lightning reflexes, 
+              and unwavering sportsmanship.
+            </p>
+            <div class="banner-highlights">
+              <div class="highlight-chip"><i class="fa-solid fa-medal gold"></i> Multiple Sports Medals</div>
+              <div class="highlight-chip"><i class="fa-solid fa-certificate cyan"></i> Certified National Contender</div>
+              <div class="highlight-chip"><i class="fa-solid fa-heart-pulse red"></i> High Stamina & Team Grit</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Major Milestone Cards -->
+        <div class="achievements-grid">
+          
+          <!-- Class 10: Kabaddi National -->
+          <div class="glass-card achievement-card national-border">
+            <div class="achievement-level-badge national">
+              <i class="fa-solid fa-fire"></i> National Level
+            </div>
+            <div class="achievement-icon-wrapper gold-glow">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="achievement-meta">
+              <span class="achievement-class">Class 10 Milestone</span>
+              <h3 class="achievement-title">Kabaddi (National Level)</h3>
+            </div>
+            <p class="achievement-desc">
+              Reached the pinnacle of school-level sports competition by competing at the <strong>National Level</strong> in Kabaddi. 
+              Mastered high-pressure tactical raiding, strategic defensive formations, coordination, and split-second decision-making.
+            </p>
+            <div class="achievement-footer">
+              <span class="badge-pill"><i class="fa-solid fa-medal"></i> National Representation</span>
+              <span class="badge-pill"><i class="fa-solid fa-certificate"></i> Verified Certificate</span>
+            </div>
+          </div>
+
+          <!-- Class 9: Volleyball Regional -->
+          <div class="glass-card achievement-card regional-border">
+            <div class="achievement-level-badge regional">
+              <i class="fa-solid fa-bolt"></i> Regional Level
+            </div>
+            <div class="achievement-icon-wrapper cyan-glow">
+              <i class="fa-solid fa-volleyball"></i>
+            </div>
+            <div class="achievement-meta">
+              <span class="achievement-class">Class 9 Milestone</span>
+              <h3 class="achievement-title">Volleyball (Regional Level)</h3>
+            </div>
+            <p class="achievement-desc">
+              Represented at the <strong>Regional Level</strong> in Volleyball. Played key roles in team blocking, 
+              spiking, and defensive coverage. Honed sharp hand-eye coordination and trust within an intensely synchronized team.
+            </p>
+            <div class="achievement-footer">
+              <span class="badge-pill"><i class="fa-solid fa-medal"></i> Regional Level</span>
+              <span class="badge-pill"><i class="fa-solid fa-users"></i> Team Synergy</span>
+            </div>
+          </div>
+
+          <!-- Class 6: Athletics Regional -->
+          <div class="glass-card achievement-card regional-border">
+            <div class="achievement-level-badge regional">
+              <i class="fa-solid fa-person-running"></i> Regional Level
+            </div>
+            <div class="achievement-icon-wrapper purple-glow">
+              <i class="fa-solid fa-stopwatch-20"></i>
+            </div>
+            <div class="achievement-meta">
+              <span class="achievement-class">Class 6 Milestone</span>
+              <h3 class="achievement-title">Athletics (Regional Level)</h3>
+            </div>
+            <p class="achievement-desc">
+              Ignited my competitive sports journey early in <strong>Class 6</strong> by competing in regional-level athletics. 
+              Built a strong foundation in speed, endurance, explosive power, and self-discipline that laid the groundwork for future athletic honors.
+            </p>
+            <div class="achievement-footer">
+              <span class="badge-pill"><i class="fa-solid fa-medal"></i> Regional Athletics</span>
+              <span class="badge-pill"><i class="fa-solid fa-gauge-high"></i> Speed & Stamina</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Certificates CTA banner in Achievements -->
+        <div class="certificates-cta-box glass-card">
+          <div class="cta-box-content">
+            <i class="fa-solid fa-ribbon ribbon-icon"></i>
+            <div>
+              <h3>Explore My Complete Awards & Verification Archive</h3>
+              <p>View verified certificates, medals breakdown, and institutional credentials from sports and academics.</p>
+            </div>
+          </div>
+          <button class="glow-btn secondary-glow trigger-action" data-action="certificates">
+            <span class="btn-beam"></span>
+            <span class="btn-content">
+              <i class="fa-solid fa-certificate"></i>
+              <span>View All Certificates</span>
+            </span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CALL TO ACTION / GET IN TOUCH ==================== -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="glass-card cta-card">
+          <div class="cta-badge">Open for Collaborations & Growth</div>
+          <h2 class="cta-title">Ready to Build the Future Together?</h2>
+          <p class="cta-text">
+            Whether you want to discuss technology, collaborate on academic projects, or connect with a dedicated sportsman-engineer, 
+            I'd love to hear from you!
+          </p>
+          <div class="cta-buttons">
+            <button class="glow-btn primary-glow trigger-action" data-action="contact">
+              <span class="btn-beam"></span>
+              <span class="btn-content">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Get In Touch</span>
+              </span>
+            </button>
+            <button class="glow-btn outline-glow trigger-action" data-action="resume">
+              <span class="btn-beam"></span>
+              <span class="btn-content">
+                <i class="fa-solid fa-download"></i>
+                <span>Get Resume</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span>&lt;</span>Rishabh Singh<span>/&gt;</span>
+        </div>
+        <p class="footer-copy">
+          First-Year B.Tech Student • JECRC University • Varanasi, India.<br/>
+          Crafted with modern HTML5, CSS3 & JavaScript.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="mailto:singhrishabh0089@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://linkedin.com/" title="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="https://instagram.com/" title="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== AESTHETIC LOADING SCREEN ==================== -->
+  <div class="cyber-loader-overlay" id="cyber-loader" aria-hidden="true">
+    <div class="loader-backdrop"></div>
+    <div class="loader-box">
+      <!-- Quantum Ring Animation -->
+      <div class="quantum-spinner">
+        <div class="ring-outer"></div>
+        <div class="ring-middle"></div>
+        <div class="ring-inner"></div>
+        <div class="loader-core-icon" id="loader-icon">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+      </div>
+
+      <!-- Cyber Text Status -->
+      <div class="loader-status">
+        <div class="loader-headline" id="loader-title">INITIALIZING PROTOCOL</div>
+        <div class="loader-subline" id="loader-msg">Connecting to Rishabh's secure portfolio matrix...</div>
+      </div>
+
+      <!-- Progress Meter -->
+      <div class="loader-progress-track">
+        <div class="loader-progress-bar" id="loader-progress"></div>
+      </div>
+
+      <div class="loader-meta">
+        <span class="meta-item"><i class="fa-solid fa-microchip"></i> JECRC_NODE_01</span>
+        <span class="meta-item"><i class="fa-solid fa-signal"></i> 99.8% SYNC</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== CERTIFICATES MODAL ==================== -->
+  <div class="cyber-modal" id="certificates-modal" aria-hidden="true" role="dialog" aria-labelledby="cert-modal-title">
+    <div class="modal-backdrop modal-close-trigger"></div>
+    <div class="modal-dialog modal-xl">
+      
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-tag"><i class="fa-solid fa-award"></i> Verified Credentials</div>
+          <h2 id="cert-modal-title" class="modal-title">Certificates & <span class="gradient-text">Medals</span></h2>
+        </div>
+        <button class="modal-close-btn modal-close-trigger" aria-label="Close Certificates Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Modal Category Filters -->
+      <div class="cert-filters">
+        <button class="cert-filter-btn active" data-filter="all">All Records</button>
+        <button class="cert-filter-btn" data-filter="sports">Sports & Medals</button>
+        <button class="cert-filter-btn" data-filter="academic">Academics & School</button>
+        <button class="cert-filter-btn" data-filter="tech">AI & Digital Literacy</button>
+      </div>
+
+      <!-- Modal Content Body -->
+      <div class="modal-body cert-grid">
+        
+        <!-- Cert 1: National Kabaddi -->
+        <div class="glass-card cert-item" data-category="sports">
+          <div class="cert-card-preview national-grade">
+            <div class="cert-watermark"><i class="fa-solid fa-trophy"></i></div>
+            <div class="cert-badge gold"><i class="fa-solid fa-medal"></i> National Level</div>
+            <h3 class="cert-card-title">National Kabaddi Championship</h3>
+            <span class="cert-card-org">Class 10 • All India School Sports</span>
+            <div class="cert-card-ribbon">Honorary Distinction</div>
+          </div>
+          <div class="cert-card-details">
+            <p>Represented at the highest national tier in Class 10, demonstrating tactical leadership, physical stamina, and defensive mastery.</p>
+            <div class="cert-card-meta">
+              <span><i class="fa-solid fa-calendar"></i> Class 10</span>
+              <span><i class="fa-solid fa-shield-halved"></i> Certified Medalist</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 2: Regional Volleyball -->
+        <div class="glass-card cert-item" data-category="sports">
+          <div class="cert-card-preview regional-grade">
+            <div class="cert-watermark"><i class="fa-solid fa-volleyball"></i></div>
+            <div class="cert-badge cyan"><i class="fa-solid fa-medal"></i> Regional Level</div>
+            <h3 class="cert-card-title">Regional Volleyball Tournament</h3>
+            <span class="cert-card-org">Class 9 • Regional Sports Meet</span>
+            <div class="cert-card-ribbon">Team Excellence</div>
+          </div>
+          <div class="cert-card-details">
+            <p>Competed across the region in high-tempo volleyball tournaments with top-tier offensive spiking and team defense.</p>
+            <div class="cert-card-meta">
+              <span><i class="fa-solid fa-calendar"></i> Class 9</span>
+              <span><i class="fa-solid fa-users"></i> Key Team Player</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 3: Regional Athletics -->
+        <div class="glass-card cert-item" data-category="sports">
+          <div class="cert-card-preview athletics-grade">
+            <div class="cert-watermark"><i class="fa-solid fa-person-running"></i></div>
+            <div class="cert-badge purple"><i class="fa-solid fa-medal"></i> Regional Level</div>
+            <h3 class="cert-card-title">Regional Athletics Meet</h3>
+            <span class="cert-card-org">Class 6 • Track & Field</span>
+            <div class="cert-card-ribbon">Endurance Award</div>
+          </div>
+          <div class="cert-card-details">
+            <p>Early athletic breakthrough in Class 6 track and field regional events, establishing high-end discipline and stamina.</p>
+            <div class="cert-card-meta">
+              <span><i class="fa-solid fa-calendar"></i> Class 6</span>
+              <span><i class="fa-solid fa-stopwatch"></i> Track & Field</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 4: Kendriya Vidyalaya 12-Year Academic Milestone -->
+        <div class="glass-card cert-item" data-category="academic">
+          <div class="cert-card-preview school-grade">
+            <div class="cert-watermark"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="cert-badge blue"><i class="fa-solid fa-school"></i> 12-Year Foundation</div>
+            <h3 class="cert-card-title">Kendriya Vidyalaya Academic Career</h3>
+            <span class="cert-card-org">Class 1 to Class 12 Certificate of Completion</span>
+            <div class="cert-card-ribbon">All-Rounder Honor</div>
+          </div>
+          <div class="cert-card-details">
+            <p>Honored for consistent academic dedication, sportsmanship, and leadership across a comprehensive 12-year schooling journey.</p>
+            <div class="cert-card-meta">
+              <span><i class="fa-solid fa-landmark"></i> Kendriya Vidyalaya</span>
+              <span><i class="fa-solid fa-check-double"></i> CBSE Certified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 5: Digital Literacy & AI Foundation -->
+        <div class="glass-card cert-item" data-category="tech">
+          <div class="cert-card-preview tech-grade">
+            <div class="cert-watermark"><i class="fa-solid fa-brain"></i></div>
+            <div class="cert-badge green"><i class="fa-solid fa-microchip"></i> Tech Foundations</div>
+            <h3 class="cert-card-title">Digital Literacy & Emerging AI</h3>
+            <span class="cert-card-org">JECRC University Tech Forum</span>
+            <div class="cert-card-ribbon">Digital Innovator</div>
+          </div>
+          <div class="cert-card-details">
+            <p>Certified in computational logic, digital literacy fundamentals, modern web navigation, and introductory artificial intelligence models.</p>
+            <div class="cert-card-meta">
+              <span><i class="fa-solid fa-university"></i> JECRC Univ</span>
+              <span><i class="fa-solid fa-code"></i> AI & Computing</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <span class="modal-footer-note"><i class="fa-solid fa-circle-info"></i> Original certificates and medals are physically archived and verified.</span>
+        <button class="btn-modern modal-close-trigger">Close Window</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== CONTACT MODAL ==================== -->
+  <div class="cyber-modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="contact-modal-title">
+    <div class="modal-backdrop modal-close-trigger"></div>
+    <div class="modal-dialog">
+      
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-tag"><i class="fa-solid fa-envelope"></i> Open Channel</div>
+          <h2 id="contact-modal-title" class="modal-title">Get in <span class="gradient-text">Touch</span></h2>
+        </div>
+        <button class="modal-close-btn modal-close-trigger" aria-label="Close Contact Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-intro">
+          Feel free to reach out for tech collaborations, university initiatives, sports networking, or professional opportunities!
+        </p>
+
+        <!-- Direct Contact Channels -->
+        <div class="direct-channels">
+          <a href="mailto:singhrishabh0089@gmail.com" class="direct-channel-card">
+            <div class="channel-icon email"><i class="fa-solid fa-at"></i></div>
+            <div class="channel-info">
+              <span class="channel-title">Email Directly</span>
+              <span class="channel-value">singhrishabh0089@gmail.com</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square channel-arrow"></i>
+          </a>
+
+          <div class="direct-channel-card">
+            <div class="channel-icon pin"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="channel-info">
+              <span class="channel-title">Location</span>
+              <span class="channel-value">Varanasi & JECRC University, Jaipur</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Form -->
+        <form class="contact-form" id="portfolio-contact-form">
+          <div class="form-group">
+            <label for="contact-name">Your Full Name</label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="contact-name" name="name" placeholder="e.g. Aryan Sharma" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Your Email Address</label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="contact-email" name="email" placeholder="e.g. aryan@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-tag"></i>
+              <input type="text" id="contact-subject" name="subject" placeholder="Tech Collaboration / Inquiry" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Your Message</label>
+            <div class="input-wrapper textarea-wrapper">
+              <i class="fa-solid fa-comment-dots"></i>
+              <textarea id="contact-message" name="message" rows="4" placeholder="Hi Rishabh, I came across your portfolio..." required></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="glow-btn primary-glow full-width-btn" id="send-msg-btn">
+            <span class="btn-beam"></span>
+            <span class="btn-content">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send Transmission</span>
+            </span>
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
